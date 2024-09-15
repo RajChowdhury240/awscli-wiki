@@ -355,72 +355,72 @@ aws iam delete-account-alias --account-alias <alias>
 ```
 
 # Access Analyzer
-## 1. Create an Analyzer
+#### Create an Analyzer
 ```
 aws accessanalyzer create-analyzer --analyzer-name <analyzer-name> --type ACCOUNT
 ```
 
-## 2. List Analyzers
+#### List Analyzers
 ```
 aws accessanalyzer list-analyzers
 ```
 
-## 3. Delete an Analyzer
+#### Delete an Analyzer
 ```
 aws accessanalyzer delete-analyzer --analyzer-name <analyzer-name>
 ```
 
-## 4. Get Analyzer Details
+#### Get Analyzer Details
 ```
 aws accessanalyzer get-analyzer --analyzer-name <analyzer-name>
 ```
 
-## 5. List Findings
+#### List Findings
 ```
 aws accessanalyzer list-findings --analyzer-name <analyzer-name>
 ```
 
-## 6. Get Finding Details
+#### Get Finding Details
 ```
 aws accessanalyzer get-finding --id <finding-id>
 ```
 
-## 7. Archive a Finding
+#### Archive a Finding
 ```
 aws accessanalyzer archive-finding --analyzer-name <analyzer-name> --id <finding-id>
 ```
 
-## 8. Update a Finding
+#### Update a Finding
 ```
 aws accessanalyzer update-findings --analyzer-name <analyzer-name> --status <status>
 ```
 
-## 9. Validate a Policy
+#### Validate a Policy
 ```
 aws accessanalyzer validate-policy --policy-type <type> --policy-document <json-policy>
 ```
 
-## 10. List Archive Rules
+#### List Archive Rules
 ```
 aws accessanalyzer list-archive-rules --analyzer-name <analyzer-name>
 ```
 
-## 11. Create an Archive Rule
+#### Create an Archive Rule
 ```
 aws accessanalyzer create-archive-rule --analyzer-name <analyzer-name> --filter <filter-key>=<filter-value> --rule-name <rule-name>
 ```
 
-## 12. Get Archive Rule
+#### Get Archive Rule
 ```
 aws accessanalyzer get-archive-rule --analyzer-name <analyzer-name> --rule-name <rule-name>
 ```
 
-## 13. Delete an Archive Rule
+#### Delete an Archive Rule
 ```
 aws accessanalyzer delete-archive-rule --analyzer-name <analyzer-name> --rule-name <rule-name>
 ```
 
-## 14. Update an Archive Rule
+#### Update an Archive Rule
 ```
 aws accessanalyzer update-archive-rule --analyzer-name <analyzer-name> --rule-name <rule-name> --filter <filter-key>=<filter-value>
 ```
